@@ -6,6 +6,11 @@ h1 {
   margin: 0;
 }
 
+h3 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
 body, fieldset {
   margin: 0;
   padding: 0;
@@ -66,3 +71,42 @@ main {
   margin-top: 20px;
   color: white;
 }
+
+.right {
+  width: 60vw;
+}
+.right-01, .right-03 {
+  background-color: rgb(248,249,250);
+}
+
+.right-01, .right-02, .right-03 {
+  padding-left: 50px;
+}
+.right-01 {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+    
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 30vh;
+  margin-bottom: 50px;
+}
+
+.cta h3:first-child {
+  margin-bottom: 15px;
+}
+
+form {
+  background-color: white;
+}
+
+.row {
+  display: flex;
+
+}
+
