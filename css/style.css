@@ -85,9 +85,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  flex-grow:1;
-
-    
+  flex-grow: 1;
 }
 
 .right-01, .right-03 {
@@ -138,7 +136,6 @@ input {
  height: 30px;
  border: 1px solid #E5E7EB;
  border-radius: 5px;
- margin-bottom: 15px;
  
 }
 
@@ -148,6 +145,8 @@ input {
 }
 
 button {
+  font-size: 20px;
+  font-weight: bold;
   color: white;
   background-color: rgb(99, 123, 81);
   padding: 12px 40px;
@@ -160,4 +159,39 @@ a {
   text-decoration: none;
   font-weight: bold;
   color: rgb(99, 123, 81);
+}
+
+/* Input validation */
+span {
+  position: relative;
+  font-size: 13px;
+}
+
+input:user-valid {
+  border: 1px solid green;
+}
+
+input:user-invalid {
+  border: 1px solid red;
+}
+
+input:user-invalid+span::after {
+  color: red;
+}
+
+input[type="text"]:user-invalid+span::after {
+  content: "*Enter a valid name";
+}
+
+input[type="email"]:user-invalid+span::after {
+  content: "*Eenter a valid email";
+}
+
+input[type="tel"]:user-invalid+span::after {
+  content: "Enter a valid phone number";
+}
+
+input[type="password"]:user-invalid+span::after {
+  content: "*Enter a valid password";
+
 }
