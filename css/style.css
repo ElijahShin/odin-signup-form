@@ -139,6 +139,11 @@ input {
  
 }
 
+input:focus {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: rgb(235, 234, 234);
+}
+
 .right-03 {
   flex-grow: 1;
   padding-top: 50px;
